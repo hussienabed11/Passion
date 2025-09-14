@@ -5455,3 +5455,14 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+
+[data-aos] {
+  opacity: 1; /* AOS هيتعامل مع opacity */
+  transform: translateY(20px); /* البداية */
+  transition-property: transform, opacity;
+  transition-duration: 1200ms;
+  transition-timing-function: ease-in-out;
+}
+html {
+  scroll-behavior: smooth;
+}

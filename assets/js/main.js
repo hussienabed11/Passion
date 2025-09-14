@@ -205,3 +205,12 @@
   document.addEventListener('scroll', navmenuScrollspy);
 
 })();
+
+  document.addEventListener("DOMContentLoaded", function() {
+    AOS.init({
+    duration: 2000,       // مدة الانيميشن بالميلي ثانية
+    easing: 'ease-in-out', // نوع الحركة يكون smooth
+    once: false,           // لما ترجع للعنصر يعيد تشغيل الانيميشن
+    mirror: true           // لو عندك scroll up يرجع يظهر الانيميشن
+    });
+  });
